@@ -1,7 +1,11 @@
 {
   "presets": [
     "es2015",
+    "stage-0",
     "react"
+  ],
+  "plugins": [
+    "styled-jsx/babel"
   ],
   "env": {
     "development": {

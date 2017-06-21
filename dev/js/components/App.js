@@ -1,16 +1,18 @@
-import React from 'react';
-import UserList from '../containers/user-list';
-import UserDetails from '../containers/user-detail';
-require('../../scss/style.scss');
+import React from 'react'
+import '../../sass/style.sass'
+import Home from './home.js'
+import Navbar from './navbar.js'
+
+const Flexbox = () => (
+  <div>
+  </div>
+)
 
 const App = () => (
-    <div>
-        <h2>User List</h2>
-        <UserList />
-        <hr />
-        <h2>User Details</h2>
-        <UserDetails />
-    </div>
+  <div>
+    <Navbar/>
+    <Home/>
+  </div>
 );
 
 export default App;

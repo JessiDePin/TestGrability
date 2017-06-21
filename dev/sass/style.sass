@@ -1,0 +1,103 @@
+$primary: #006699;
+$button-padding: 10px;
+// colors
+$red: #ed1b24;
+$green: #4fbb4c;
+$darkgreen: #109576;
+$purple: #662e91
+$blue: #1696d5;
+$darkblue: #576683;
+$orancle: #f7941d;
+$yellow: #efea14;
+$white: #e3e4e6;
+$grey: #49494b;
+$black: #000;
+$index: 0;
+=color($name, $color)
+  .#{$name}
+    background-color: $color;
+    color: #fff;
+    font-weight: bolder;
+
+@while $index <= 10
+  $shadow: $index + px
+  .shadow-#{$index}
+    z-index: $index
+    box-shadow: 0 0 3px $shadow #000
+  .text-shadow-#{$index}
+    z-index: $index
+    text-shadow: 0 0 $shadow #000
+  $index: $index +1
+
++color('green', $green)
++color('darkgreen', $darkgreen)
++color('red', $red)
++color('black', $black)
++color('while', $white)
++color('grey', $grey)
++color('white', $white)
++color('yellow', $yellow)
++color('purple', $purple)
++color('blue', $blue)
++color('oracle', $orancle)
++color('darkblue', $darkblue)
+
+
+input[type="button"]
+  padding: $button-padding;
+  margin: 0;
+  outline: none;
+  width: 50%;
+  box-sizing: border-box;
+  border: none;
+
+input[type="text"]
+  top: 0;
+  text-align: center;
+  height: 50px;
+  resize: none;
+  padding: $button-padding;
+  margin: 0;
+  outline: none;
+  width: 70%;
+  color: #fff;
+  font-weight: bold;
+  display: inline;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #fff;
+
+input[type="text"]:target
+  border-bottom: 2px solid $blue;
+
+.flexbox
+
+nav
+  padding: 0 20px
+  background-color: $red;
+  width: 100%;
+  img
+    position: relative;
+    height: 50px;
+    display: inline;
+    text-align: center;
+  input
+    position: absolute;
+    background-color: $red;
+    color: #000;
+
+body
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+
+h2
+	color: $primary;
+
+.home
+  width: 100%;
+  height: 100%;
+  // background-repeat: repeat;
+  // background-image: url("/images/textura.jpg");
+  h1
+    text-align: center;
